@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ali Ghanim Eesa | Professional Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:'Poppins',sans-serif;background:#0b1220;color:#e5e7eb;transition:0.4s;scroll-behavior:smooth}
+.light-mode{background:#f1f5f9;color:#0f172a}
+
+header{padding:100px 20px;text-align:center}
+.hero-box{max-width:820px;margin:auto;background:rgba(2,6,23,.95);padding:40px;border-radius:22px;box-shadow:0 20px 40px rgba(0,0,0,.4)}
+.initials{width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,#2563eb,#06b6d4);display:flex;align-items:center;justify-content:center;margin:auto;color:white;font-weight:700;font-size:26px;margin-bottom:15px}
+
+.btn{display:inline-block;margin-top:15px;padding:12px 22px;background:linear-gradient(135deg,#2563eb,#06b6d4);color:white;text-decoration:none;border-radius:25px;font-size:14px}
+
+/* NAVIGATION */
+nav{background:#020617;padding:12px;position:sticky;top:0;z-index:1000}
+.nav-wrap{max-width:900px;margin:auto;display:flex;justify-content:center;position:relative}
+nav a{color:white;margin:0 15px;text-decoration:none;font-size:14px;padding:6px 8px}
+
+.nav-indicator{position:absolute;bottom:0;height:3px;width:60px;background:linear-gradient(135deg,#2563eb,#06b6d4);transition:0.3s;border-radius:10px}
+
+.mobile-menu{display:none;background:#020617;padding:12px;text-align:center}
+
+.container{max-width:1100px;margin:auto;padding:25px}
+section{background:#020617;padding:28px;margin-bottom:30px;border-radius:18px}
+.light-mode section{background:white}
+
+h2{color:#38bdf8}
+
+/* TIMELINE */
+.timeline{border-left:3px solid #38bdf8;padding-left:20px}
+.timeline-item{margin-bottom:25px}
+.timeline-item h3{margin-bottom:6px}
+.timeline-item ul{padding-left:18px}
+
+/* SKILLS */
+.progress{background:#1e293b;border-radius:20px;overflow:hidden;margin-bottom:14px}
+.progress-bar{height:10px;width:0;background:linear-gradient(135deg,#2563eb,#06b6d4);transition:2s}
+
+/* ANIMATIONS */
+.reveal{opacity:0;transform:translateY(40px);transition:.8s}
+.reveal.active{opacity:1;transform:translateY(0)}
+
+.toggle-btn{position:fixed;right:15px;bottom:20px;background:#2563eb;color:white;border:none;padding:10px 14px;border-radius:50%;cursor:pointer}
+
+footer{text-align:center;padding:20px;color:#94a3b8}
+
+@media(max-width:768px){
+nav{display:none}
+.mobile-menu{display:block}
+}
+/* Icon animation */
+.icon-btn{display:inline-flex;align-items:center;gap:8px;animation:pulse 2s infinite}
+@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.05)}100%{transform:scale(1)}}
+
+/* Floating contact bar */
+.floating-bar{position:fixed;bottom:20px;left:20px;display:flex;flex-direction:column;gap:10px;z-index:999}
+.floating-bar a{background:linear-gradient(135deg,#2563eb,#06b6d4);color:white;padding:12px 14px;border-radius:50%;text-decoration:none;font-size:16px;box-shadow:0 10px 20px rgba(0,0,0,.3)}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="hero-box">
+<div class="initials">AG</div>
+<h1>Ali Ghanim Eesa</h1>
+<p>Admin • Finance • HR • Logistics Professional</p>
+<a href="Ali Ghanim Eesa .pdf" class="btn" download>Download CV</a>
+</div>
+</header>
+
+<div class="mobile-menu">
+<select onchange="location=this.value">
+<option>Menu</option>
+<option value="#about">About</option>
+<option value="#experience">Experience</option>
+<option value="#skills">Skills</option>
+<option value="#contact">Contact</option>
+</select>
+</div>
+
+<nav>
+<div class="nav-wrap">
+<div class="nav-indicator"></div>
+<a href="#about">About</a>
+<a href="#experience">Experience</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<div class="container">
+
+<section id="stats" class="reveal">
+<h2>Career Highlights</h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;text-align:center">
+<div>
+<h1 class="counter" data-target="7">0</h1>
+<p>Years Experience</p>
+</div>
+<div>
+<h1 class="counter" data-target="12">0</h1>
+<p>Humanitarian Projects</p>
+</div>
+<div>
+<h1 class="counter" data-target="5">0</h1>
+<p>International Organizations</p>
+</div>
+</div>
+</section>
+
+<section id="about" class="reveal">
+<h2>About Me</h2>
+<p>NGO operations professional with more than 7 years of experience managing finance, HR, logistics, and administration across international humanitarian projects in Iraq.</p>
+</section>
+
+<section id="experience" class="reveal">
+<h2>Professional Experience</h2>
+<div class="timeline">
+
+<div class="timeline-item">
+<h3>PUI — Logistic, Admin, Finance & HR Officer (2025)</h3>
+<ul>
+<li>Prepared monthly financial reports and donor budget tracking</li>
+<li>Managed cash flow, safe management, and petty cash control</li>
+<li>Supervised payroll processing and staff contracts</li>
+<li>Led recruitment and onboarding procedures</li>
+<li>Oversaw procurement, supplier coordination, and fleet operations</li>
+<li>Ensured compliance with PUI and donor financial regulations</li>
+</ul>
+</div>
+
+<div class="timeline-item">
+<h3>PUI — Admin, Finance & HR Officer (2024)</h3>
+<ul>
+<li>Maintained financial documentation and daily cashbooks</li>
+<li>Prepared payment requests and financial reconciliations</li>
+<li>Supported HR attendance tracking and staff database updates</li>
+<li>Assisted audits and donor financial reporting</li>
+</ul>
+</div>
+
+<div class="timeline-item">
+<h3>HEKS/EPER — Base Operations Supervisor (2022–2023)</h3>
+<ul>
+<li>Supervised base-level operations and department coordination</li>
+<li>Managed operational budgets and forecasting</li>
+<li>Led logistics, HR, and finance teams</li>
+<li>Coordinated reporting with country office and headquarters</li>
+<li>Improved internal workflow efficiency and compliance</li>
+</ul>
+</div>
+
+<div class="timeline-item">
+<h3>Handicap International — Finance Officer (2020–2021)</h3>
+<ul>
+<li>Prepared financial statements and expenditure tracking</li>
+<li>Processed payments and cash requests</li>
+<li>Monitored donor compliance requirements</li>
+<li>Supported internal and external audits</li>
+</ul>
+</div>
+
+<div class="timeline-item">
+<h3>Terre des Hommes — Senior Admin, Finance & HR Officer (2019)</h3>
+<ul>
+<li>Managed field-level finance and HR operations</li>
+<li>Supervised payroll, contracts, and recruitment</li>
+<li>Handled procurement coordination and logistics support</li>
+<li>Prepared operational and donor reports</li>
+</ul>
+</div>
+
+<div class="timeline-item">
+<h3>Terre des Hommes — Admin, Finance & HR Officer (2018–2019)</h3>
+<ul>
+<li>Handled daily finance operations and petty cash</li>
+<li>Maintained HR files and attendance monitoring</li>
+<li>Supported procurement and warehouse documentation</li>
+</ul>
+</div>
+
+<div class="timeline-item">
+<h3>Terre des Hommes — Admin, Finance & HR Assistant (2017–2018)</h3>
+<ul>
+<li>Supported finance filing and voucher processing</li>
+<li>Assisted HR administrative documentation</li>
+<li>Maintained organized office records and archiving</li>
+</ul>
+</div>
+
+</div>
+</section>
+
+<section id="skills" class="reveal">
+<h2>Professional Skills</h2>
+<p>Finance Management</p><div class="progress"><div class="progress-bar" style="width:90%"></div></div>
+<p>Human Resources</p><div class="progress"><div class="progress-bar" style="width:85%"></div></div>
+<p>Logistics & Procurement</p><div class="progress"><div class="progress-bar" style="width:80%"></div></div>
+<p>NGO Operations</p><div class="progress"><div class="progress-bar" style="width:88%"></div></div>
+</section>
+
+
+
+<section id="contact-info" class="reveal">
+<h2>Contact Information</h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:15px">
+
+<div>
+<p><strong>Full Name:</strong> Ali Ghanim Eesa</p>
+<p><strong>Country:</strong> Iraq</p>
+<p><strong>Cities:</strong> Kirkuk, Erbil, Baghdad</p>
+</div>
+
+<div>
+<p><strong>Phone:</strong></p>
+<a href="tel:+9647722166412" class="btn">📞 Call Now</a>
+
+<p style="margin-top:15px"><strong>Email:</strong></p>
+<a href="mailto:aliganem27@yahoo.com" class="btn">📧 Primary Email</a><br><br>
+<a href="mailto:ganema776@gmail.com" class="btn icon-btn">📧 Secondary Email</a>
+<br><br>
+<p><strong>LinkedIn:</strong></p>
+<a href="https://www.linkedin.com/in/ali-eesa-05339220a" target="_blank" class="btn icon-btn">🔗 LinkedIn Profile</a>
+</div>
+
+</div>
+</section>
+
+<section id="education" class="reveal">
+<h2>Education</h2>
+<p><strong>BSc in Electronic & Control Engineering</strong><br>Technical College – Kirkuk</p>
+</section>
+
+<section id="training" class="reveal">
+<h2>Professional Training</h2>
+<ul>
+<li>Financial Management (FMD PRO) – Beirut, Lebanon</li>
+<li>Logistics Management Training</li>
+<li>Human Resources Management Training</li>
+<li>Admin Finance & SAGA Accounting System Training</li>
+<li>Fraud and Corruption Prevention Training</li>
+<li>Code of Conduct Training</li>
+<li>Security Awareness Training</li>
+</ul>
+</section>
+
+<section id="languages" class="reveal">
+<h2>Languages</h2>
+<ul>
+<li>Arabic — Fluent</li>
+<li>English — Very Good</li>
+<li>Kurdish — Intermediate</li>
+<li>Turkmen — Native</li>
+</ul>
+</section>
+
+<section id="additional" class="reveal">
+<h2>Additional Information</h2>
+<ul>
+<li><strong>Nationality:</strong> Iraqi</li>
+<li><strong>Work Areas:</strong> Baghdad, Kirkuk, Salah Al-Din, Nineveh</li>
+<li><strong>Availability:</strong> Available for national and international NGO operations</li>
+<li><strong>References:</strong> Available upon request</li>
+</ul>
+</section>
+
+</div>
+
+<button class="toggle-btn" onclick="toggleMode()">🌓</button>
+
+<footer>© 2026 Ali Ghanim Eesa</footer>
+
+<script>
+// Scroll reveal
+const reveals=document.querySelectorAll('.reveal');
+window.addEventListener('scroll',()=>{
+reveals.forEach(sec=>{
+if(sec.getBoundingClientRect().top<window.innerHeight-100){sec.classList.add('active')}})
+});
+
+// Dark mode toggle
+function toggleMode(){document.body.classList.toggle('light-mode')}
+
+// Animated counters
+const counters=document.querySelectorAll('.counter');
+let counterStarted=false;
+
+function startCounters(){
+counters.forEach(counter=>{
+const target=+counter.getAttribute('data-target');
+let count=0;
+const speed=target/60;
+const update=()=>{
+if(count<target){
+count+=speed;
+counter.innerText=Math.ceil(count);
+requestAnimationFrame(update);
+}else{counter.innerText=target}
+};
+update();
+});
+}
+
+window.addEventListener('scroll',()=>{
+const stats=document.getElementById('stats');
+if(stats.getBoundingClientRect().top<window.innerHeight-100 && !counterStarted){
+startCounters();
+counterStarted=true;
+}
+});
+
+// Floating nav indicator
+const links=document.querySelectorAll('nav a');
+const indicator=document.querySelector('.nav-indicator');
+
+function moveIndicator(el){
+indicator.style.width=el.offsetWidth+'px';
+indicator.style.left=el.offsetLeft+'px';
+}
+
+links.forEach(link=>{
+link.addEventListener('click',()=>moveIndicator(link));
+});
+
+moveIndicator(links[0]);
+</script>
+
+<div class="floating-bar">
+<a href="tel:+9647722166412" title="Call">📞</a>
+<a href="mailto:aliganem27@yahoo.com" title="Email">📧</a>
+<a href="https://www.linkedin.com/in/ali-eesa-05339220a" target="_blank" title="LinkedIn">🔗</a>
+</div>
+
+</body>
+</html>
